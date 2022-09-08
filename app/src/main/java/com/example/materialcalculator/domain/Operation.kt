@@ -8,7 +8,7 @@ enum class Operation(val symbol: Char) {
   PERCENT('%')
 }
 
-fun operationSymbols() = Operation.values().map { it.symbol }.joinToString("")
+val operationSymbols = Operation.values().map { it.symbol }.joinToString("")
 
 fun operationFromSymbol(symbol: Char) =
   Operation.values().find { it.symbol == symbol } ?: error("operation parsing error")
