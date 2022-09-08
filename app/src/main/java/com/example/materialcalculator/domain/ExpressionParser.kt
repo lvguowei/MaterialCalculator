@@ -10,7 +10,7 @@ class ExpressionParser(
     while (i < calculation.length) {
       val curChar = calculation[i]
       when {
-        curChar in operationSymbols() -> {
+        curChar in operationSymbols -> {
           result.add(ExpressionPart.Op(operationFromSymbol(curChar)))
         }
         curChar.isDigit() -> {
