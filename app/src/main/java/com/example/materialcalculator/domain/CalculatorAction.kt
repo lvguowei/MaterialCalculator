@@ -1,7 +1,5 @@
 package com.example.materialcalculator.domain
 
-import android.icu.util.IslamicCalendar
-
 sealed interface CalculatorAction {
   data class Number(val number: Int) : CalculatorAction
   data class Op(val operation: Operation) : CalculatorAction
