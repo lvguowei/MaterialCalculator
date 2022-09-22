@@ -25,7 +25,7 @@ fun CalculatorDisplay(
             value = expression,
             onValueChange = {},
             textStyle = TextStyle(
-                fontSize = 80.sp,
+                fontSize = 40.sp,
                 color = MaterialTheme.colorScheme.onSecondaryContainer,
                 textAlign = TextAlign.End
             ),
